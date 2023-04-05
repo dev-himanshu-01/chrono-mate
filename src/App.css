@@ -1,5 +1,124 @@
 .App {}
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  margin-top: 2em;
+  width: 30%;
+}
+
+.main-container .input-box {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.main-container .input-box input {
+  font-size: 1.2em;
+  outline: none;
+  border: none;
+  padding: 0.5em 1.2em 0.5em 2em;
+  font-size: 1.8em;
+  border-width: 1px;
+  border-color: #d5d5d5;
+  background-color: #f8f8f8;
+  color: #232323eb;
+  border-style: solid;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  box-shadow: 3px 4px 14px rgba(225, 225, 225, .67);
+  text-shadow: 0px 0px 0px rgba(35, 35, 35, .0);
+}
+
+.main-container .input-box input:focus {
+  outline: none;
+}
+
+.main-container .input-box input::placeholder {
+  color: #9f9f9ff7;
+  font-weight: 200;
+  font-size: 1em;
+  font-style: normal;
+}
+
+.main-container .input-box p {
+  cursor: default;
+  text-align: center;
+  margin: 0;
+  padding: 5px 15px;
+  background: #ffceb4;
+  color: #000;
+  font-size: 1em;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: solid rgba(255, 255, 255, 0.18);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  gap: 1.5em;
+}
+
+.todo .todo-title {
+  align-self: left;
+  padding: 0.5em 2em;
+  margin-top: 0.5em;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 500;
+
+
+  background-color: #fbda1d52;
+  background: rgba(0, 139, 255, 0.25);
+  list-style-type: none;
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 3px #79797959;
+}
+
+.todo .todo-title:hover {
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out !important;
+  cursor: pointer;
+}
+
+.todo .todo-del-icon {
+  backdrop-filter: blur(1.5px);
+  list-style-type: none;
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 3px #79797959;
+  background-color: #ff0000a1;
+  color: #fff;
+
+  padding: 0.55em 1em;
+  margin-top: 0.5em;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 500;
+
+  
+}
+
+.todo .todo-del-icon:hover {
+  background-color: #ff0000;
+  /* color: #ffffffc7; */
+  transition: all 600ms ease-in-out !important;
+  cursor: pointer;
+}
+
 /* CSS EFFECTS  */
 
 .shineEff {

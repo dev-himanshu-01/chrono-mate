@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Header.css"
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -25,7 +25,11 @@ const Header = () => {
                 github
             </Button>
 
-            <div className="buymeacoffee-btn shineEff" onClick={BUYMEACOFFEE_btn_handler}>
+            <div
+                className="buymeacoffee-btn shineEff"
+                onClick={BUYMEACOFFEE_btn_handler}
+                href={BUY_ME_A_COFFEE_LINK}
+            >
                 <img src={BUYMEACOFFEE} height={'30'} alt="buymeacoffee-img" />
                 <span>buy me a coffee</span>
             </div>
