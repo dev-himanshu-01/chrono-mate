@@ -42,18 +42,16 @@ function App() {
 
   return (
     <div className="App">
-
       <Header />
 
-      <div className='main-container'>
-
+      <section className='main-container'>
         <div className='input-box'>
           <input
             type='text'
             value={task}
             onKeyDown={keyDownHandler}
             onChange={(event) => setTask(event.target.value)}
-            placeholder='enter your to do!?'
+            placeholder='Add a task here...'
           />
           <p>You have currently {
             !tasks.length ? "no tasks" :
@@ -62,7 +60,6 @@ function App() {
                   null
           } to perform</p>
         </div>
-
 
         <div className='todo-list'>
           {tasks.map((task) => {
@@ -78,9 +75,7 @@ function App() {
               </div>)
           })}
         </div>
-
-      </div>
-
+      </section>
 
     </div>
   );

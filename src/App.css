@@ -62,17 +62,19 @@
 .todo {
   display: flex;
   align-items: center;
-  justify-items: flex-end;
-  gap: 1.5em;
+  justify-content: center;
+  gap: 1.2em;
+  width: 30vw;
 }
 
 .todo .todo-title {
-  align-self: left;
+  align-self: flex-end;
   padding: 0.5em 2em;
   margin-top: 0.5em;
   text-align: left;
   font-size: 1.2em;
   font-weight: 500;
+  width: 100%;
 
 
   background-color: #fbda1d52;
@@ -103,24 +105,22 @@
   background-color: #ff0000a1;
   color: #fff;
 
-  padding: 0.55em 1em;
+  align-self: flex-end;
+  padding: 0.45em 1em;
   margin-top: 0.5em;
   text-align: left;
   font-size: 1.2em;
   font-weight: 500;
-
-  
+  width: 10%;
 }
 
 .todo .todo-del-icon:hover {
   background-color: #ff0000;
-  /* color: #ffffffc7; */
   transition: all 600ms ease-in-out !important;
   cursor: pointer;
 }
 
-/* CSS EFFECTS  */
-
+/* CSS BTN EFFECTS  */
 .shineEff {
   z-index: 1;
   position: relative;
