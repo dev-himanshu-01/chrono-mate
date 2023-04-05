@@ -10,7 +10,11 @@ A simple todo app which have all basic functionality!
 
 ## Demo
 
-Demo of the app task master 📘
+Live Site: https://task-master-01.web.app/
+<br>
+<br>
+<br>
+Video-Demo of the Task Master App 📘
  
 ![github-video-gif](https://user-images.githubusercontent.com/110885026/229994613-ac999201-dbbc-4a7a-8f50-b87f270a062f.gif)
 
