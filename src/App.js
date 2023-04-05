@@ -1,4 +1,4 @@
-import React ,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
@@ -47,7 +47,7 @@ function App() {
       {/*HEADER*/}
       <Header />
 
-{/* MAIN CONTAINER */}
+      {/* MAIN CONTAINER */}
       <section className='main-container'>
         <div className='input-box'>
           <input
@@ -81,7 +81,8 @@ function App() {
         </div>
       </section>
 
-      <Footer/>
+      {/* FOOTER  */}
+      <Footer />
 
     </React.Fragment>
   );
