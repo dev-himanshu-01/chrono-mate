@@ -1,4 +1,19 @@
-.App {}
+/* SCROLL-BAR */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey;
+  background-color: rgba(168, 168, 168, 0.542);
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ff813f;
+  border-radius: 5px;
+}
 
 .main-container {
   display: flex;

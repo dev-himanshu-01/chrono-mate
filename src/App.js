@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import React ,{ useState, useEffect } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import { Filter } from '@mui/icons-material';
+import Footer from './Components/Footer';
+
 
 function App() {
   const [task, setTask] = useState('')
@@ -41,9 +42,12 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <React.Fragment>
+
+      {/*HEADER*/}
       <Header />
 
+{/* MAIN CONTAINER */}
       <section className='main-container'>
         <div className='input-box'>
           <input
@@ -77,7 +81,9 @@ function App() {
         </div>
       </section>
 
-    </div>
+      <Footer/>
+
+    </React.Fragment>
   );
 }
 
