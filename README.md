@@ -6,9 +6,10 @@ A simple todo app which have all basic functionality!
 
 
 
+<br>
+<br>
 
-
-## Demo
+## ⏮ Demo
 
 Live Site: https://task-master-01.web.app/
 <br>
@@ -18,7 +19,11 @@ Video-Demo of the Task Master App 📘
  
 ![github-video-gif](https://user-images.githubusercontent.com/110885026/229994613-ac999201-dbbc-4a7a-8f50-b87f270a062f.gif)
 
-## Run Locally
+
+<br>
+<br>
+
+## 💻 Run Locally
 
 Clone the project
 
@@ -45,7 +50,10 @@ Start the server
 ```
 
 
-## Screenshots
+<br>
+<br>
+
+## 📸 Screenshots
 
 ![image](https://user-images.githubusercontent.com/110885026/229995247-6ecf2b7d-56e3-43f9-9285-019ce60c29b5.png)
 
@@ -56,7 +64,10 @@ Start the server
 ![image](https://user-images.githubusercontent.com/110885026/229995486-cc691628-a6b3-44a6-8ef3-a9f88a0a6258.png)
 
 
-## Lessons Learned
+<br>
+<br>
+
+## 🧠 Lessons Learned
 
 Task Master was my first ReactJS project, buit within a day
 here are the topics that I learnt,
@@ -68,19 +79,31 @@ here are the topics that I learnt,
 - learnt certain topics like useState, useEffect etc.
 
 
+<br>
+<br>
 
-## Acknowledgements
+## 🎈 Acknowledgements
  - [Material UI](https://mui.com/)
  - [Readme.so](https://readme.so/)
  - [FreeCodeCamp](https://www.freecodecamp.org/)
+
+
+<br>
+<br>
 
 ## 🚀 About Me
 17 y/o — Developer and Designer | ReactJS fanatic ⚛️| Building kickass products💡|  Open for new opportunities 🌟
 
 
-## Authors
+<br>
+<br>
+
+## 🙋‍♂️ Authors
 - [@dev-himanshu-01](https://github.com/dev-himanshu-01)
 
+
+<br>
+<br>
 
 ## 🔗 Links
 
@@ -89,9 +112,10 @@ here are the topics that I learnt,
 [![Gmail](https://img.shields.io/badge/gmail-c71610?style=for-the-badge&logo=gmail&logoColor=white)](emailto:himanshu01.dev@gmail.com)
 
 
+<br>
+<br>
 
-
-## Feedback
+## 💬 Feedback
 
 If you have any feedback, please reach out to us at himanshu01.dev@gmail.com
 
