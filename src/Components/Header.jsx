@@ -6,7 +6,7 @@ import BUYMEACOFFEE from '../Assets/buymeacoffee.png'
 
 const Header = () => {
 
-    const GITHUB_REPO_LINK = 'https://github.com/dev-himanshu-01/task-master';
+    const GITHUB_REPO_LINK = 'https://github.com/garadiya0/task-master';
 
     const BUY_ME_A_COFFEE_LINK = 'https://www.buymeacoffee.com/garadiya0';
 
