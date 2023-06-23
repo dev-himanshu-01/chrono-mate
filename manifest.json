@@ -1,0 +1,11 @@
+{
+  "name": "Taskmaster",
+  "version": "1.0.0",
+  "description": "Save your tasks in the browser",
+  "manifest_version": 3,
+  "author": "Himanshu Garadiya",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Taskmaster"
+  }
+}
