@@ -1,41 +1,70 @@
-import React from 'react'
-import "./Header.css"
-import Button from '@mui/material/Button';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import BUYMEACOFFEE from '../Assets/buymeacoffee.png'
+import React, { useEffect } from "react";
+import "./Header.css";
+import { useAuth0 } from "@auth0/auth0-react";
+import { Avatar, Dropdown, Text, Loading } from "@nextui-org/react";
 
 const Header = () => {
+  const { loginWithRedirect, user, logout, isAuthenticated } = useAuth0();
 
-    const GITHUB_REPO_LINK = 'https://github.com/garadiya0/task-master';
-
-    const BUY_ME_A_COFFEE_LINK = 'https://www.buymeacoffee.com/garadiya0';
-
-    const BUYMEACOFFEE_btn_handler = () => {
-        window.open("https://www.buymeacoffee.com/garadiya0", "_blank");
+  const menuBtnHandler = (keyVal) => {
+    if (keyVal === "logout") {
+      logout({ logoutParams: { returnTo: window.location.origin } });
     }
+  };
+  useEffect(() => {
+    console.log(user);
+  }, []);
 
-    return (
-        <section className='header-section'>
-            <Button
-                variant="contained"
-                className='github-btn shineEff'
-                href={GITHUB_REPO_LINK}
-                target='_blank'
-                startIcon={<GitHubIcon />}>
-                github
-            </Button>
-
-            <div
-                className="buymeacoffee-btn shineEff"
-                onClick={BUYMEACOFFEE_btn_handler}
-                href={BUY_ME_A_COFFEE_LINK}
+  return (
+    <section className="header-section">
+      <>
+        {isAuthenticated ? (
+          <span className="nav_name">Ohayo! {user.nickname} 👋</span>
+        ) : (
+          <span className="nav_name">Ohayo! 👋</span>
+        )}
+      </>
+      <>
+        {isAuthenticated ? (
+          <Dropdown>
+            <Dropdown.Trigger>
+              <Avatar
+                className="dropdown-trigger-img"
+                src={user.picture}
+                squared
+                size="lg"
+              />
+            </Dropdown.Trigger>
+            <Dropdown.Menu
+              color="primary"
+              aria-label="User Actions"
+              onAction={menuBtnHandler}
             >
-                <img src={BUYMEACOFFEE} height={'30'} alt="buymeacoffee-img" />
-                <span>buy me a coffee</span>
-            </div>
+              <Dropdown.Item key="profile" css={{ height: "$18" }}>
+                <Text b color="inherit" css={{ d: "flex" }}>
+                  Signed in as
+                </Text>
+                <Text b color="inherit" css={{ d: "flex" }}>
+                  {user.email}
+                </Text>
+              </Dropdown.Item>
 
-        </section>
-    )
-}
+              <Dropdown.Item key="logout" color="error" withDivider>
+                Log Out
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        ) : (
+          <div
+            className="sign-in-btn shineEff"
+            onClick={() => loginWithRedirect()}
+          >
+            <span>sign in</span>
+          </div>
+        )}
+      </>
+    </section>
+  );
+};
 
 export default Header;
